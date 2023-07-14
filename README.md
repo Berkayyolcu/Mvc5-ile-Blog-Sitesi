@@ -6,6 +6,11 @@ siteme ulasmak icin <a href="https://berkayyolcu.com/">berkayyolcu</a> tıklayab
 <br>
 
 <img src="https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/hakk%C4%B1mda.PNG" width="auto">
+<br>
+
+<img src="https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/deneyim.PNG" width="auto">
+<br>
+
 
 
 
