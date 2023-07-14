@@ -19,3 +19,6 @@ siteme ulasmak icin <a href="https://berkayyolcu.com/">berkayyolcu</a> tıklayab
 <img src="https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/hobilerim.PNG" width="auto">
 <br>
 
+<img src="https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/projelerim.PNG" width="auto">
+<br>
+
