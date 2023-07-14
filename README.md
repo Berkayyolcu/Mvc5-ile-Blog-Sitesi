@@ -15,6 +15,10 @@ siteme ulasmak icin <a href="https://berkayyolcu.com/">berkayyolcu</a> tıklayab
 <br>
 
 
+<img src="https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/yetenek.PNG" width="auto">
+<br>
 
 
 
+
+https://github.com/Berkayyolcu/Mvc5-ile-Blog-Sitesi/blob/main/screenshot/
