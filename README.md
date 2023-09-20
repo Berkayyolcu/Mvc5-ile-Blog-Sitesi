@@ -1,6 +1,5 @@
 # Mvc5-ile-Blog-Sitesi
-
-Bu projemde kendimi gelistirmek için mvc5 ile blog sitesi yapmaya calıstım ayrıca eksiklerimi tamamlamaya calısıyorum <br>
+Bu projemde kendini tanıtmak için mvc5 ile blog sitesi yapmaya calıstım ayrıca ve daha'da bu projemi gelistirmek farklı fikirler içinde çalışıyorum <br>
 siteme ulasmak icin <a href="https://berkayyolcu.com/">berkayyolcu</a> tıklayabilirsin
 <br>
 
