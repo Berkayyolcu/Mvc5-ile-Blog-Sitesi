@@ -1,0 +1,79 @@
+﻿@model BlogWeb.Models.Entity.TBLHAKKIMDA
+@{
+    ViewBag.Title = "HakkımdaGetir";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+
+<div class="container mt-5">
+
+    <h3 class="text-center text-danger ">Hakkımda Bilgi Güncelleme</h3>
+
+    @using (Html.BeginForm("HakkımdaGuncelle", "Hakkımda", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div style="margin-top:5px;"></div>
+
+        <div class="form-group">
+
+            <div style="margin-bottom:10px;">
+                <label>Hakkımda No</label>
+                @Html.TextBoxFor(k => k.ID, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Adı :</label>
+                @Html.TextBoxFor(k => k.AD, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Soyadı :</label>
+                @Html.TextBoxFor(k => k.SOYAD, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Adresi :</label>
+                @Html.TextBoxFor(k => k.ADRES, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Mail Adresi :</label>
+                @Html.TextBoxFor(k => k.MAIL, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Telefon Numarası :</label>
+                @Html.TextBoxFor(k => k.TELEFON, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Acıklama :</label>
+                @Html.TextAreaFor(model => model.KISANOT, new { @id = "editor" })
+            </div>
+
+            <button class="btn btn-success mb-5">Güncelle</button>
+        </div>
+    }
+</div>
+
+
+@*<script>
+            initSample();
+    </script>*@
+
+
+
+
+@Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
+@Scripts.Render("~/ckeditor/ckeditor.js")
+@Scripts.Render("~/ckeditor/ckfinder/ckfinder.js")
+@Scripts.Render("~/Scripts/jquery.validate.js")
+
+
+<script type="text/javascript">
+    var editor = CKEDITOR.instances['editor'];
+    if (editor) { editor.destroy(true); }
+    CKEDITOR.replace('editor', {
+        enterMode: CKEDITOR.ENTER_BR,
+    });
+    CKFinder.setupCKEditor(null, '@Url.Content("~/ckeditor/ckfinder/")');
+</script>
