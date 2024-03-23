@@ -11,6 +11,10 @@
     <tr style="background-color:rgb(252,178,22)">
         <th>Sertifika Id</th>
         <th>Sertifikalar</th>
+        <th>Sertifikanın Alındığı Kurum</th>
+        <th>Eğitimci Adı Soyadı</th>
+        <th>Tarih</th>
+        <th>Süre</th>
         <th>Sil</th>
         <th>Güncelle</th>
     </tr>
@@ -18,7 +22,11 @@
     {
         <tr>
             <td>@sertifika.ID</td>
-            <td>@sertifika.SERTIFIKALARIM
+            <td>@sertifika.SERTIFIKALARIM</td>
+            <td>@sertifika.KURUM</td>
+            <td>@sertifika.EĞİTMEN</td>
+            <td>@sertifika.TARİH</td>
+            <td>@sertifika.SÜRE</td>
             <td><a href="/Sertifikalarım/SertifikalarımSil/@sertifika.ID" class="btn btn-danger" onclick="return sor()">Sil</a></td>
             <td><a href="/Sertifikalarım/SertifikalarımGetir/@sertifika.ID" class="btn btn-success">Güncelle</a></td>
         </tr>

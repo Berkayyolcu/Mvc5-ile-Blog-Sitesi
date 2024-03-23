@@ -21,10 +21,28 @@
             </div>
 
             <div style="margin-bottom:10px;">
-                <label>Sertifilarım</label>
+                <label>Sertifika Adı</label>
                 @Html.TextBoxFor(k => k.SERTIFIKALARIM, new { @class = "form-control" })
             </div>
 
+            <div style="margin-bottom:10px;">
+                <label>Sertifikanın Alındığı Kurum</label>
+                @Html.TextBoxFor(k => k.KURUM, new { @class = "form-control" })
+            </div>
+            <div style="margin-bottom:10px;">
+                <label>Eğitimci Adı ve Soyadı</label>
+                @Html.TextBoxFor(k => k.EĞİTMEN, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Sertifikanın Alındığı Tarih</label>
+                @Html.TextBoxFor(k => k.TARİH, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Sertifika Süresi</label>
+                @Html.TextBoxFor(k => k.SÜRE, new { @class = "form-control" })
+            </div>
 
             <button class="btn btn-success mb-5">Güncelle</button>
         </div>
