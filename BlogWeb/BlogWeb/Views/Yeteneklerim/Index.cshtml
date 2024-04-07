@@ -1,0 +1,58 @@
+﻿@using BlogWeb.Models.Entity
+@model List<BlogWeb.Models.Entity.TBLYETENEKLER>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+@{ string renk = ""; }
+@{ string labelrenk = ""; }
+
+
+<table class="table table-striped" style="margin-top:100px;">
+
+    <tr style="background-color:rgb(252,178,22)">
+        <th>Yetenek Id</th>
+        <th>Yeteneklerim</th>
+        <th>Derece</th>
+        <th>Yüzde</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var yetenek in Model)
+    {
+        if (yetenek.ORAN >= 0 && yetenek.ORAN <= 50)
+        {
+            renk = "progress-bar bg-danger";
+            labelrenk = "badge bg-danger";
+        }
+        if (yetenek.ORAN >= 51 && yetenek.ORAN <= 70)
+        {
+            renk = "progress-bar bg-warning";
+            labelrenk = "badge bg-warning";
+        }
+        if (yetenek.ORAN >= 71 && yetenek.ORAN <= 84)
+        {
+            renk = "progress-bar bg-primary";
+            labelrenk = "badge bg-primary";
+        }
+        if (yetenek.ORAN >= 85 && yetenek.ORAN <= 100)
+        {
+            renk = "progress-bar bg-success";
+            labelrenk = "badge bg-success";
+        }
+        <tr>
+            <td>@yetenek.ID</td>
+            <td>@yetenek.YETENEKLER</td>
+            <td>
+                <div class="progress progress-xs">
+                    <div class="@renk" style="width:@yetenek.ORAN%"></div>
+                </div>
+            </td>
+            <td><span class="@labelrenk">@yetenek.ORAN%</span></td>
+
+            <td><a href="/Yeteneklerim/YeteneklerimSil/@yetenek.ID" class="btn btn-danger ml-5" onclick="return sor()">Sil</a></td>
+            <td><a href="/Yeteneklerim/YeteneklerimGetir/@yetenek.ID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>

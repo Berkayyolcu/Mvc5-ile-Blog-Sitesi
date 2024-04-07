@@ -1,0 +1,32 @@
+﻿@using BlogWeb.Models.Entity
+@model List<BlogWeb.Models.Entity.TBLDENEYIM>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+<table class="table table-striped" style="margin-top:100px;">
+
+    <tr style="background-color:rgb(252,178,22)">
+        <th>Deneyim Id</th>
+        <th>Deneyim Ünvan</th>
+        <th>Deneyim İsyeri</th>
+        <th>Deneyim Acıklama</th>
+        <th>Tarih</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var deneyim in Model)
+    {
+        <tr>
+            <td>@deneyim.ID</td>
+            <td>@deneyim.BASLIK</td>
+            <td>@deneyim.ALTBASLIK</td>
+            <td>@deneyim.ACIKLAMA</td>
+            <td>@deneyim.TARIH</td>
+            <td><a href="/Deneyim/DeneyimSil/@deneyim.ID" class="btn btn-danger" onclick="return sor()">Sil</a></td>
+            <td><a href="/Deneyim/DeneyimGetir/@deneyim.ID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+

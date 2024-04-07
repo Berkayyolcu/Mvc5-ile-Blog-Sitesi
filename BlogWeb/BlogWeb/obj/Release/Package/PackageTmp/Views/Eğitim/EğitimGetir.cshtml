@@ -1,0 +1,69 @@
+﻿@model BlogWeb.Models.Entity.TBLEGITIM
+@{
+    ViewBag.Title = "EğitimGetir";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+<div class="container mt-5">
+
+    <h3 class="text-center text-danger ">Eğitim Bilgi Güncelleme</h3>
+
+    @using (Html.BeginForm("EğitimGetir", "Eğitim", FormMethod.Post))
+    {
+        <div style="margin-top:5px;"></div>
+
+        <div class="form-group">
+
+            <div style="margin-bottom:10px;">
+                <label>Eğitim Id</label>
+                @Html.TextBoxFor(k => k.ID, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Okul Adı</label>
+                @Html.TextBoxFor(k => k.BASLIK, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Eğitim Diploması :</label>
+                @Html.TextBoxFor(k => k.ALTBASLIK, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Acıklama :</label>
+                @Html.TextAreaFor(k => k.ACIKLAMA, new { @id = "editor" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Eğitim Not :</label>
+                @Html.TextBoxFor(k => k.NOT, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Eğitim Baslangıc ve Bitis Tarihi :</label>
+                @Html.TextBoxFor(k => k.TARIH, new { @class = "form-control" })
+            </div>
+
+            <button class="btn btn-success mb-5">Güncelle</button>
+        </div>
+    }
+</div>
+
+
+
+
+
+@Scripts.Render("~/Scripts/jquery-1.7.1.min.js")
+@Scripts.Render("~/ckeditor/ckeditor.js")
+@Scripts.Render("~/ckeditor/ckfinder/ckfinder.js")
+@Scripts.Render("~/Scripts/jquery.validate.js")
+
+
+<script type="text/javascript">
+    var editor = CKEDITOR.instances['editor'];
+    if (editor) { editor.destroy(true); }
+    CKEDITOR.replace('editor', {
+        enterMode: CKEDITOR.ENTER_BR,
+    });
+    CKFinder.setupCKEditor(null, '@Url.Content("~/ckeditor/ckfinder/")');
+</script>

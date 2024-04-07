@@ -1,0 +1,35 @@
+﻿@model BlogWeb.Models.Entity.TBLDENEYIM
+@{
+    ViewBag.Title = "DeneyimEkle";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+
+
+<div class="container mt-5">
+
+    <form class="form-group" method="post">
+        <div class="row mt-5">
+
+            <h3 class="text-center text-danger">Deneyim Ekleme</h3>
+
+            <input type="text" class="form-control mt-2" name="BASLIK" placeholder="Ünvan" />
+            <input type="text" class="form-control mt-2" name="ALTBASLIK" placeholder="Firma Adı" />
+
+            <div class="grid-container mt-2">
+                <div style="width:1410px; margin-left:-10px;">
+                    <textarea id="editor" class="form-control m-auto" name="ACIKLAMA">  </textarea>
+                </div>
+            </div>
+
+            <input type="text" class="form-control mt-2" name="TARIH" placeholder="Baslangıc ve Bitis Tarihini Giriniz" />
+
+        </div>
+        <button class="btn btn-primary mt-2 " id="Btn1">Deneyim Ekle</button>
+    </form>
+
+</div>
+
+<script>
+    initSample();
+</script>
