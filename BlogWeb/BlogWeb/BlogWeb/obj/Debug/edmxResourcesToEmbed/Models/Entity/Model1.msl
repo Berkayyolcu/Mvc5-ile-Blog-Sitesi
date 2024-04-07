@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BlogWebDbModelStoreContainer" CdmEntityContainer="BlogWebDbEntities">
+    <EntitySetMapping Name="TBLADMİN">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLADMİN">
+        <MappingFragment StoreEntitySet="TBLADMİN">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLDENEYIM">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLDENEYIM">
+        <MappingFragment StoreEntitySet="TBLDENEYIM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="ALTBASLIK" ColumnName="ALTBASLIK" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLEGITIM">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLEGITIM">
+        <MappingFragment StoreEntitySet="TBLEGITIM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BASLIK" ColumnName="BASLIK" />
+          <ScalarProperty Name="ALTBASLIK" ColumnName="ALTBASLIK" />
+          <ScalarProperty Name="ACIKLAMA" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="NOT" ColumnName="NOT" />
+          <ScalarProperty Name="TARIH" ColumnName="TARIH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHAKKIMDA">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLHAKKIMDA">
+        <MappingFragment StoreEntitySet="TBLHAKKIMDA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Resim" ColumnName="Resim" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="SOYAD" ColumnName="SOYAD" />
+          <ScalarProperty Name="ADRES" ColumnName="ADRES" />
+          <ScalarProperty Name="MAIL" ColumnName="MAIL" />
+          <ScalarProperty Name="TELEFON" ColumnName="TELEFON" />
+          <ScalarProperty Name="KISANOT" ColumnName="KISANOT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLMETATAG">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLMETATAG">
+        <MappingFragment StoreEntitySet="TBLMETATAG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLPROJELER">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLPROJELER">
+        <MappingFragment StoreEntitySet="TBLPROJELER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="LİNK" ColumnName="LİNK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLSOSYALMEDYA">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLSOSYALMEDYA">
+        <MappingFragment StoreEntitySet="TBLSOSYALMEDYA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AD" ColumnName="AD" />
+          <ScalarProperty Name="LİNK" ColumnName="LİNK" />
+          <ScalarProperty Name="İKON" ColumnName="İKON" />
+          <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLYETENEKLER">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLYETENEKLER">
+        <MappingFragment StoreEntitySet="TBLYETENEKLER">
+          <ScalarProperty Name="ORAN" ColumnName="ORAN" />
+          <ScalarProperty Name="YETENEKLER" ColumnName="YETENEKLER" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLHOBILER">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLHOBILER">
+        <MappingFragment StoreEntitySet="TBLHOBILER">
+          <ScalarProperty Name="HOBBY" ColumnName="HOBBY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLİLETİSİM">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLİLETİSİM">
+        <MappingFragment StoreEntitySet="TBLİLETİSİM">
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="Mesaj" ColumnName="Mesaj" />
+          <ScalarProperty Name="Konu" ColumnName="Konu" />
+          <ScalarProperty Name="Mail" ColumnName="Mail" />
+          <ScalarProperty Name="AdveSoyad" ColumnName="AdveSoyad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBLSERTIFIKALAR">
+      <EntityTypeMapping TypeName="BlogWebDbModel.TBLSERTIFIKALAR">
+        <MappingFragment StoreEntitySet="TBLSERTIFIKALAR">
+          <ScalarProperty Name="SÜRE" ColumnName="SÜRE" />
+          <ScalarProperty Name="TARİH" ColumnName="TARİH" />
+          <ScalarProperty Name="EĞİTMEN" ColumnName="EĞİTMEN" />
+          <ScalarProperty Name="KURUM" ColumnName="KURUM" />
+          <ScalarProperty Name="SERTIFIKALARIM" ColumnName="SERTIFIKALARIM" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

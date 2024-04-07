@@ -1,0 +1,16 @@
+﻿@using BlogWeb.Models.Entity
+@model List<TBLHOBILER>
+
+<div class="my-auto">
+    <h2 class="mb-5">HOBİLERİM</h2>
+    <ul class="fa-ul mb-0">
+        @foreach (var h in Model)
+        {
+
+            <li>
+                <i class="fa-li fa fa-check"></i>
+                <p class="mb-0"> @h.HOBBY</p>
+            </li>
+        }
+        </ul>
+</div>

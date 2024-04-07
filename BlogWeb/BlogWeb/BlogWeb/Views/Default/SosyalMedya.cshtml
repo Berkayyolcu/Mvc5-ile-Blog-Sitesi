@@ -1,0 +1,15 @@
+﻿
+@using BlogWeb.Models.Entity
+@model List<TBLSOSYALMEDYA>
+
+<div class="social-icons">
+    @foreach (var hk in Model)
+    {
+
+        <a href="@hk.LİNK" target="_blank">
+            <i class="@hk.İKON"></i>
+        </a>
+
+    }
+</div>
+

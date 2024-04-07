@@ -1,0 +1,36 @@
+﻿@model BlogWeb.Models.Entity.TBLHAKKIMDA
+@{
+    ViewBag.Title = "HakkımdaEkle";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+<div class="container mt-5">
+
+    <form class="form-group" method="post" enctype="multipart/form-data">
+        <div class="row mt-5">
+
+            <h3 class="text-center text-danger">Hakkımda Bilgi Ekleme</h3>
+            <input class="form-control" type="file" name="Resim" id="formFileMultiple" required>
+            <input type="text" class="form-control mt-2" name="AD" placeholder="Adınız" />
+            <input type="text" class="form-control mt-2" name="SOYAD" placeholder="Soyadınız" />
+            <input type="text" class="form-control mt-2" name="ADRES" placeholder="Adresiniz" />
+            <input type="text" class="form-control mt-2" name="MAIl" placeholder="Mail" />
+            <input type="text" class="form-control mt-2" name="Telefon" placeholder="Telefon" />
+
+            <div class="grid-container mt-2">
+                <div style="width:1410px; margin-left:-10px;">
+                    <textarea id="editor" class="form-control m-auto" name="KISANOT">  </textarea>
+                </div>
+            </div>
+
+        </div>
+        <button class="btn btn-primary mt-2" id="Btn1">Hakkımda Ekle</button>
+    </form>
+
+</div>
+
+
+
+<script>
+    initSample();
+</script>

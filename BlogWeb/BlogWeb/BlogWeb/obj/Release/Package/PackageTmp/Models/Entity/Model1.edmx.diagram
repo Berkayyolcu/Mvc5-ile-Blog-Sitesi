@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9522b49ff68b41d1bcfd1d6ed1c451a2" Name="Diagram1">
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLADMİN" Width="1.5" PointX="5.375" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLDENEYIM" Width="1.5" PointX="2.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLEGITIM" Width="1.5" PointX="3.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLHAKKIMDA" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLMETATAG" Width="1.5" PointX="8.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLPROJELER" Width="1.5" PointX="5.375" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLSOSYALMEDYA" Width="1.5" PointX="3.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLYETENEKLER" Width="1.5" PointX="2.125" PointY="3.625" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLHOBILER" Width="1.5" PointX="0.5" PointY="3.75" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLİLETİSİM" Width="1.5" PointX="7.125" PointY="3.625" />
+        <EntityTypeShape EntityType="BlogWebDbModel.TBLSERTIFIKALAR" Width="1.5" PointX="7.125" PointY="0.875" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

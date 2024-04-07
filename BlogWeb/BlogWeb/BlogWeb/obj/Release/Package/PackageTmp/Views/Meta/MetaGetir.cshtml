@@ -1,0 +1,53 @@
+﻿@model BlogWeb.Models.Entity.TBLMETATAG
+@{
+    ViewBag.Title = "MetaGetir";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+
+<div class="container mt-5">
+
+    <h3 class="text-center text-danger ">Meta Bilgi Güncelleme</h3>
+
+    @using (Html.BeginForm("MetaGetir", "Meta", FormMethod.Post))
+    {
+        <div style="margin-top:5px;"></div>
+
+        <div class="form-group">
+
+            <div style="margin-bottom:10px;">
+                <label>Meta Id</label>
+                @Html.TextBoxFor(k => k.ID, new { @class = "form-control", @readonly = "readonly" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Site Özeti</label>
+                @Html.TextBoxFor(k => k.Abstract, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Site Yapımcısının Adı ve İletisim Bilgileri</label>
+                @Html.TextBoxFor(k => k.Author, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Site İceriği Acıklama</label>
+                @Html.TextBoxFor(k => k.Description, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Anahtar Kelimeler</label>
+                @Html.TextBoxFor(k => k.Keywords, new { @class = "form-control" })
+            </div>
+
+            <div style="margin-bottom:10px;">
+                <label>Site Baslık</label>
+                @Html.TextBoxFor(k => k.Title, new { @class = "form-control" })
+            </div>
+
+
+
+            <button class="btn btn-success mb-5">Güncelle</button>
+        </div>
+    }
+</div>

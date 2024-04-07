@@ -1,0 +1,41 @@
+﻿@model BlogWeb.Models.Entity.TBLEGITIM
+@{
+    ViewBag.Title = "EğitimEkle";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+<div class="container mt-5">
+
+    <form class="form-group" method="post">
+        <div class="row mt-5">
+
+            <h3 class="text-center text-danger">Eğitim Ekleme</h3>
+
+            <input type="text" class="form-control mt-2" name="BASLIK" placeholder="Okul Adı" />
+            @Html.ValidationMessageFor(x => x.BASLIK, "", new { @style = "color:red;" })
+
+            <input type="text" class="form-control mt-2" name="ALTBASLIK" placeholder="Eğitim Diploması" />
+
+            <div class="grid-container mt-2">
+                <div style="width:1410px; margin-left:-10px;">
+                    <textarea id="editor" class="form-control m-auto" name="ACIKLAMA">  </textarea>
+                </div>
+            </div>
+
+            <input type="text" class="form-control mt-2" name="Not" placeholder="Eğitim Not" />
+            @Html.ValidationMessageFor(x => x.NOT, "", new { @style = "color:red;" })
+
+            <input type="text" class="form-control mt-2" name="TARIH" placeholder="Eğitim Baslangıc ve Bitis Tarihi" />
+            @Html.ValidationMessageFor(x => x.TARIH, "", new { @style = "color:red;" })
+
+
+        </div>
+        <button class="btn btn-primary mt-2" id="Btn1">Eğitim Ekle</button>
+    </form>
+
+</div>
+
+
+<script>
+    initSample();
+</script>

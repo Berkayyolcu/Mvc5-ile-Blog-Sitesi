@@ -1,0 +1,54 @@
+﻿@using BlogWeb.Models.Entity
+@model List<BlogWeb.Models.Entity.TBLHAKKIMDA>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Panel.cshtml";
+}
+
+
+@foreach (var hakkımda in Model)
+{
+    <div class="container">
+        <div class="card bg-light" style="margin:100px;">
+
+            <div class="card-body">
+                <h3 class="mt-5 mb-5 text-center">Hakkımda Bilgiler</h3>
+
+                <h5 class="text-dark">Hakkımda ID :  <span class="text-secondary">@hakkımda.ID</span></h5>
+                <hr />
+
+                <h5 class="text-dark">Resim :  <span class="text-secondary"><img src="@hakkımda.Resim" style="border-radius: 25%; width:100px; height:auto"/></span></h5>
+                <hr />
+
+                <h5 class="text-dark">Adı :  <span class="text-secondary">@hakkımda.AD </span></h5>
+                <hr />
+
+                <h5 class="text-dark">Soyadı :  <span class="text-secondary">@hakkımda.SOYAD </span></h5>
+                <hr />
+
+                <h5 class="text-dark">Adres :  <span class="text-secondary">@hakkımda.ADRES </span></h5>
+                <hr />
+
+                <h5 class="text-dark">Mail :  <span class="text-secondary">@hakkımda.MAIL </span></h5>
+                <hr />
+
+                <h5 class="text-dark">Telefon :  <span class="text-secondary">@hakkımda.TELEFON </span></h5>
+                <hr />
+
+                <h5 class="text-dark">Acıklama :  <span class="text-secondary">@hakkımda.KISANOT </span></h5>
+                <hr />
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col mb-5">
+                        <a href="/Hakkımda/HakkımdaGetir/@hakkımda.ID" class="btn btn-success">Güncelle</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+}
+
